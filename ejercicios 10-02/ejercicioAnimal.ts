@@ -15,11 +15,11 @@ class Animal{
         this._color=color;
     }
 
-    breathe():void{
+    public breathe():void{
         console.log(`${this._name} está respirando`);
     }
 
-    eat(food:string): void{
+    public eat(food:string): void{
         console.log(`${this._name} come `);
         
     }
@@ -49,3 +49,4 @@ const Luna = new Cat ("Luna", "hembra", 2, 5, "gris", true, "lisa");
 const Oscar = new Cat("Óscar", "macho", 3, 7, "marrón", false, "rayado");
 
 const Boni = new Dog ("Bonita", "hembra", 7, 5, "blanco", "Human");
+
