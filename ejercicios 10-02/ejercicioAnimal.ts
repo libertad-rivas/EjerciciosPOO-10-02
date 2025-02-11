@@ -23,6 +23,19 @@ class Animal{
         console.log(`${this._name} come `);
         
     }
+    public run():void{
+
+    }
+
+    public sleep(hours: number):void{
+        console.log(`Voy a dormir por ${hours} horas`);
+        
+    }
+
+    toString():void{
+        console.log(`Nombre: ${this._name}, Sexo: ${this._sex}`);
+        
+    }
 }
 
 class Cat extends Animal{
