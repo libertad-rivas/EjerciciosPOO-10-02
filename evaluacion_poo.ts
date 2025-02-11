@@ -1,15 +1,5 @@
-/* 1. Genera una rama en tu repositorio que compartiste anteriormente con el nombre de evaluacion_poo.
-2. Desarrollar un sistema de gestión de inventario para una papelería que permita realizar operaciones de venta, consultar el inventario y gestionar productos.
-3. Debes de tener al menos 3 productos.
-4. Se debe de guardar en memoria para poder hacer operaciones de aumento, resta, consulta en el número de productos.
-4. Procura que tu código tenga calidad.
-5. Coloca como forma de comentarios en tus clases el por qué las creaste.
- */
 
-// Sistema de gestión de inventario 
-
-
-// crearé unainterfaz "Producto" para definir el tipo de elementos del array productos que haré más adelante
+// crearé unainterfaz "Producto" para definir el tipo de elementos del array productos que haré más adelante, de esta forma puedo definir todos los atributos que debe tener un producto 
 interface Producto {
     _idProducto: number;
     _nombre: string;
@@ -18,7 +8,7 @@ interface Producto {
 }
 
 
-// La clase inventario servirá para almacenar los métodos de agregar, eliminar y consultar productos
+// La clase inventario servirá para almacenar los métodos de agregar, eliminar y consultar productos, y uno extra que será "encontrarPorId" que me servirá para usarlos en los primeros métodos mencionados. La clase tendrá un contructor para inicializar productos como un array
 
 class Inventario{
     private productos: Producto[]=[];
@@ -67,7 +57,7 @@ class Inventario{
     }
 }
 
-// La clase venta servirá para gestinar las ventas de los productos e interactuar con la eliminación de los productos al venderlos
+// La clase venta servirá para gestinar las ventas de los productos e interactuar con la eliminación de los productos al venderlos, creo que no es necesario el constructor pero aún no me queda claro ese tema. Tiene un método estático para acceder a él sin crear un objeto y realizar las ventas
 class Venta {
     _idProducto: number;
     _cantidad: number;
