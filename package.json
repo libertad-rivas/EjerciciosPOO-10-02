@@ -1,0 +1,20 @@
+{
+  "name": "poo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "evaluacion_poo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libertad-rivas/EjerciciosPOO-10-02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/libertad-rivas/EjerciciosPOO-10-02/issues"
+  },
+  "homepage": "https://github.com/libertad-rivas/EjerciciosPOO-10-02#readme"
+}
